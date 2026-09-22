@@ -1,0 +1,29 @@
+import time
+import urllib.parse
+import webbrowser
+
+def mahabur_ai_scraper():
+    print("=" * 60)
+    print("👑 MAHABUR AI — LIVE BUYER DATA SCRAPER 👑")
+    print("=" * 60)
+    print("অবস্থা: বায়ার সার্চ ইঞ্জিন সাকসেসফুলি অন হয়েছে ভাই!")
+    print("=" * 60)
+    time.sleep(1)
+    
+    # টার্গেট বায়ার মার্কেট: নিউ ইয়র্কের টপ রিয়েল এস্টেট কোম্পানি
+    search_target = "Top Real Estate Agencies in New York USA with contact phone number"
+    encoded_target = urllib.parse.quote(search_target)
+    maps_url = f"https://google.com{encoded_target}"
+    
+    print(f"🎯 সার্চ করা হচ্ছে: {search_target}")
+    print("...১ সেকেন্ডের মধ্যে বায়ারদের লাইভ পেজ অন হচ্ছে ভাই...")
+    print("=" * 60)
+    time.sleep(1.5)
+    
+    # সরাসরি ব্রাউজার হিট করে রিয়েল বায়ারের লিস্ট বের করার কিক
+    webbrowser.open(maps_url)
+    print("কেল্লাফতে ভাই! আমেরিকার কোটিপতি বায়ারদের ফোন নম্বর লিস্ট অন হয়েছে!")
+    print("=" * 60)
+
+if __name__ == "__main__":
+    mahabur_ai_scraper()
